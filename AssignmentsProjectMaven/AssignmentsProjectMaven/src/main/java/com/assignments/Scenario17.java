@@ -6,10 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Scenario17 {
 public static void main(String[] args) throws InterruptedException  {
 	
-	
+	//WebDriverManager.chromedriver().setup();
 	WebDriver driver=new ChromeDriver();
 	driver.get("http://demo.automationtesting.in/Register.html");
 	driver.manage().window().maximize();
